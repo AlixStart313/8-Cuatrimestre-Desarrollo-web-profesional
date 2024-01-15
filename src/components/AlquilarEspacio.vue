@@ -11,25 +11,22 @@ export default {
     return {
       items: [
         {
-          text: "Inicio",
-          href: "#",
-          to: { name: "Inicio" },
+          text: "Alquilar espacio",
+          to: { name: "Alquilar" },
+          active: true
         },
         {
-          text: "Main",
-          href: "#",
-          to: { name: "Main" },
+          text: "Catalogo de espacios",
+          to: { name: "Catalago" },
         },
         {
-          text: "Tercero",
-          href: "#",
-          to: { name: "tercero" },
+          text: "Detalles del espacio",
+          to: { name: "Detalles" },
         },
       ],
     };
   },
-};
+}
 </script>
 
-<style>
-</style>
+<style></style>

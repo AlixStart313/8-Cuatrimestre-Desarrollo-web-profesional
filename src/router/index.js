@@ -27,9 +27,10 @@ const routes = [
             },
             {
                 path: '/tercero',
-                name: 'tercero',
+                name: 'Tercero',
                 component: () => import('../components/tercero.vue')
             },
+
             {
                 path: '/rentarEspacio',
                 name: 'Rentar',

@@ -30,10 +30,10 @@
               <b-link :to="{ name: 'tercero' }"> Tercero </b-link>
             </b-nav-item> -->
             <b-nav-item>
-              <b-link :to="{ name: 'rentarEspacio' }"> Renta tu espacio </b-link>
+              <b-link :to="{ name: 'Rentar' }"> Renta tu espacio </b-link>
             </b-nav-item>
             <b-nav-item>
-              <b-link :to="{ name: 'alquilarEspacio' }"> Alquila un espacio </b-link>
+              <b-link :to="{ name: 'Alquilar' }"> Alquila un espacio </b-link>
             </b-nav-item>
           </b-sidebar>
         </b-col>
