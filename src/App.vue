@@ -1,19 +1,12 @@
-<script setup>
-</script>
 
 <template>
   <div id="app">
+    <b-navbar toggleable="lg" z-index="15" type="dark" variant="info">
+      <b-navbar-brand href="#">NavBar</b-navbar-brand>
+    </b-navbar>
     <b-container fluid>
       <b-row>
-        <b-col class="border">
-          <b-navbar toggleable="lg"  z-index=15 type="dark" variant="info">
-            <b-navbar-brand href="#">NavBar</b-navbar-brand>
-            <b-button v-b-toggle.sidebar-1>Abrir SideBar</b-button>
-          </b-navbar>
-        </b-col>
-      </b-row>
-      <b-row>
-        <b-col class="border">
+        <b-col>
           <b-sidebar
             id="sidebar-1"
             sidebar-class="border"
@@ -24,11 +17,28 @@
             no-close-on-route-change
             no-header-close
             title="Sidebar"
-            visible="true"
-            z-index=1
+            visible
+            z-index="-1"
           >
-            <div class="px-3 py-2"></div>
+            <!-- <b-nav-item>
+              <b-link :to="{ name: 'Inicio' }"> Inicio</b-link>
+            </b-nav-item>
+            <b-nav-item>
+              <b-link :to="{ name: 'Main' }"> Main </b-link>
+            </b-nav-item>
+            <b-nav-item>
+              <b-link :to="{ name: 'tercero' }"> Tercero </b-link>
+            </b-nav-item> -->
+            <b-nav-item>
+              <b-link :to="{ name: 'Rentar' }"> Renta tu espacio </b-link>
+            </b-nav-item>
+            <b-nav-item>
+              <b-link :to="{ name: 'Alquilar' }"> Alquila un espacio </b-link>
+            </b-nav-item>
           </b-sidebar>
+        </b-col>
+        <b-col>
+          <router-view></router-view>
         </b-col>
       </b-row>
     </b-container>
@@ -36,3 +46,6 @@
 </template>
 
 
+
+<script setup>
+</script>
