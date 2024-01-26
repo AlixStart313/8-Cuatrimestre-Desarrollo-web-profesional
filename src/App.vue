@@ -35,6 +35,9 @@
             <b-nav-item>
               <b-link :to="{ name: 'Alquilar' }"> Alquila un espacio </b-link>
             </b-nav-item>
+            <b-nav-item>
+              <b-link :to="{ name: 'Formulario' }"> formulario </b-link>
+            </b-nav-item>
           </b-sidebar>
         </b-col>
         <b-col>

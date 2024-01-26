@@ -61,6 +61,11 @@ const routes = [
                 path: '/detallesEspacio',
                 name: 'Detalles',
                 component: () => import('../components/SpaceDetails.vue')
+            },
+            {
+                path: '/Formulario',
+                name: 'Formulario',
+                component: () => import('../components/Form.vue')
             }
         ]
     }
