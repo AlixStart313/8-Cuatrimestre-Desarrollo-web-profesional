@@ -18,7 +18,7 @@ const routes = [
             {
                 path: '/inicio',
                 name: 'Inicio',
-                component: () => import('../components/Inicio.vue')
+                component: () => import('../components/others/Inicio.vue')
             },
             {
                 path: '/main',
@@ -28,44 +28,44 @@ const routes = [
             {
                 path: '/tercero',
                 name: 'Tercero',
-                component: () => import('../components/tercero.vue')
+                component: () => import('../components/others/tercero.vue')
             },
 
             {
                 path: '/rentarEspacio',
                 name: 'Rentar',
-                component: () => import('../components/RentarEspacio.vue')
+                component: () => import('../components/space/RentarEspacio.vue')
             },
             {
                 path: '/infoEspacio',
                 name: 'Informacion',
-                component: () => import('../components/infoSpace.vue')
+                component: () => import('../components/space/infoSpace.vue')
             },
             {
                 path: '/ofertarEspacio',
                 name: 'Ofertar',
-                component: () => import('../components/OfertarEspacio.vue')
+                component: () => import('../components/space/OfertarEspacio.vue')
             },
 
             {
                 path: '/alquilarEspacio',
                 name: 'Alquilar',
-                component: () => import('../components/AlquilarEspacio.vue')
+                component: () => import('../components/space/AlquilarEspacio.vue')
             },
             {
                 path: '/espacios',
                 name: 'Catalago',
-                component: () => import('../components/SpaceCatalog.vue')
+                component: () => import('../components/space/SpaceCatalog.vue')
             },
             {
                 path: '/detallesEspacio',
                 name: 'Detalles',
-                component: () => import('../components/SpaceDetails.vue')
+                component: () => import('../components/space/SpaceDetails.vue')
             },
             {
                 path: '/Formulario',
                 name: 'Formulario',
-                component: () => import('../components/Form.vue')
+                component: () => import('../components/Person/RegisterPerson.vue')
             }
         ]
     }
